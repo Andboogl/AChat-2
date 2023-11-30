@@ -20,7 +20,7 @@ class Server:
             self.users_monitor()
 
         except:
-            print('Не вдалося створити сервер. Невірний IP та порт або такий адрес вже зайнятий')
+            pass
 
     def users_monitor(self):
         """Моніторинг нових користувачів"""
