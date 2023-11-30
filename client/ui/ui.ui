@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>832</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>811</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Чат</string>
+     </attribute>
+     <widget class="QListWidget" name="messages_widget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>791</width>
+        <height>221</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="message_text">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>791</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введіть сюди ваше повідомлення</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="send_message">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>421</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Відправити</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quit_from_chat">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>290</y>
+        <width>361</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Вийти з чату</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Налаштування</string>
+     </attribute>
+     <widget class="QLineEdit" name="server_ip">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>791</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>IP сервера</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="server_port">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>791</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Порт сервера</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="user_nikname">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>120</y>
+        <width>791</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Нікнейм</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="connect_to_server">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>310</y>
+        <width>391</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Підключитися</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save_settings">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>310</y>
+        <width>391</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Зберегти налаштування</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>380</y>
+        <width>521</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Файл налаштуваннь зберігається у папці .achat у директорії вашого користувача</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="avatar">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>180</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../.achat/user.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chose_avatar">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>190</y>
+        <width>661</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Вибрати...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="set_default_avatar">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>250</y>
+        <width>661</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Встановити за замовчюванням</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
