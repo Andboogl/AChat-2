@@ -57,7 +57,7 @@ class Server:
                 else:
                     continue
 
-            except:
+            except BrokenPipeError:
                 print('Не вийшло доєднати користувача')
 
     def user_handler(self, user_sock, nikname):
@@ -96,7 +96,7 @@ class Server:
                 else:
                     break
 
-            except:
+            except Exception:
                 print(f'Помилка обробника користувача {nikname}')
                 break
 
